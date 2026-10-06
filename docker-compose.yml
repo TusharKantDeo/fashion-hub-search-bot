@@ -1,0 +1,35 @@
+# Local stack: Weaviate (vector DB) + Phoenix (tracing UI).
+#   docker compose up -d
+#   Weaviate:  http://localhost:8080   (gRPC 50051)
+#   Phoenix:   http://localhost:6006   (OTLP HTTP /v1/traces, gRPC 4317)
+services:
+  weaviate:
+    image: cr.weaviate.io/semitechnologies/weaviate:1.30.0   # bump to the latest 1.x when you start a new project
+    command: ["--host", "0.0.0.0", "--port", "8080", "--scheme", "http"]
+    ports:
+      - "8080:8080"
+      - "50051:50051"
+    environment:
+      QUERY_DEFAULTS_LIMIT: 25
+      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: "true"   # local dev only
+      PERSISTENCE_DATA_PATH: /var/lib/weaviate
+      DEFAULT_VECTORIZER_MODULE: none                   # we send our own vectors
+      CLUSTER_HOSTNAME: node1
+    volumes:
+      - weaviate_data:/var/lib/weaviate
+    restart: unless-stopped
+
+  phoenix:
+    image: arizephoenix/phoenix:latest
+    ports:
+      - "6006:6006"
+      - "4317:4317"
+    environment:
+      PHOENIX_WORKING_DIR: /mnt/data
+    volumes:
+      - phoenix_data:/mnt/data
+    restart: unless-stopped
+
+volumes:
+  weaviate_data:
+  phoenix_data:

@@ -1,0 +1,92 @@
+[
+ {
+  "question": "What is your return policy?",
+  "answer": "Unworn items with tags can be returned within 30 days of delivery for a full refund to the original payment method.",
+  "type": "returns"
+ },
+ {
+  "question": "How do I start a return?",
+  "answer": "Go to My Orders, choose the item and click Return. A prepaid pickup is scheduled within 2 business days.",
+  "type": "returns"
+ },
+ {
+  "question": "Can I exchange an item for a different size?",
+  "answer": "Yes, size exchanges are free within 30 days as long as the item is unworn and has its tags.",
+  "type": "returns"
+ },
+ {
+  "question": "When will I get my refund?",
+  "answer": "Refunds are issued within 5-7 business days after the returned item passes quality check.",
+  "type": "returns"
+ },
+ {
+  "question": "Are sale items refundable?",
+  "answer": "Sale items can be exchanged but are not eligible for cash refunds; you receive store credit instead.",
+  "type": "returns"
+ },
+ {
+  "question": "How long does shipping take?",
+  "answer": "Standard shipping takes 3-5 business days; express shipping takes 1-2 business days.",
+  "type": "shipping"
+ },
+ {
+  "question": "Do you offer free shipping?",
+  "answer": "Orders above 50 USD ship free. Orders below that have a flat 5 USD shipping fee.",
+  "type": "shipping"
+ },
+ {
+  "question": "Do you ship internationally?",
+  "answer": "We currently ship to the US, Canada, UK and India.",
+  "type": "shipping"
+ },
+ {
+  "question": "How can I track my order?",
+  "answer": "A tracking link is emailed when your order ships and is also visible under My Orders.",
+  "type": "shipping"
+ },
+ {
+  "question": "How can I contact customer support?",
+  "answer": "Chat with us in the app, email support@fashionhub.example, or call 1-800-555-0199 (9am-9pm).",
+  "type": "contact"
+ },
+ {
+  "question": "Where are your stores located?",
+  "answer": "We have flagship stores in New York, London and Mumbai; see the Store Locator page for addresses.",
+  "type": "stores"
+ },
+ {
+  "question": "What sizes do you carry?",
+  "answer": "Apparel is available from XS to 3XL; footwear from US size 5 to 13. Each product page has a size chart.",
+  "type": "sizing"
+ },
+ {
+  "question": "How do I find my size?",
+  "answer": "Use the size chart on each product page; if you are between sizes we recommend sizing up.",
+  "type": "sizing"
+ },
+ {
+  "question": "How can I find current promotions?",
+  "answer": "Current promotions are listed on the Offers page and sent to newsletter subscribers.",
+  "type": "promotions"
+ },
+ {
+  "question": "Do you have a loyalty program?",
+  "answer": "Fashion Hub Rewards gives 1 point per dollar spent; 100 points equal a 5 USD voucher.",
+  "type": "promotions"
+ },
+ {
+  "question": "What payment methods do you accept?",
+  "answer": "We accept major credit and debit cards, PayPal, Apple Pay and gift cards.",
+  "type": "payments"
+ },
+ {
+  "question": "Can I cancel my order?",
+  "answer": "Orders can be cancelled from My Orders until they are shipped.",
+  "type": "orders"
+ },
+ {
+  "question": "How should I care for silk garments?",
+  "answer": "Dry clean silk or hand wash in cold water with mild detergent; do not wring.",
+  "type": "care"
+ }
+]
